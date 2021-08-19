@@ -323,10 +323,10 @@ export class NgxCarouselComponent
             : this.carouselScrollOne(1);
         } else {
            this.data.dexVal = 0;
-           this.data.touchTransform = _this.data.transform[_this.data.deviceType];
-           this.setStyle(_this.carouselInner, 'transition', 'transform 324ms cubic-bezier(0, 0, 0.2, 1)');
+           this.data.touchTransform = this.data.transform[this.data.deviceType];
+           this.setStyle(this.carouselInner, 'transition', 'transform 324ms cubic-bezier(0, 0, 0.2, 1)');
            var tran = this.data.touchTransform * -1;
-           this.setStyle(_this.carouselInner, 'transform', 'translate3d(' + tran + '%, 0px, 0px)');
+           this.setStyle(this.carouselInner, 'transform', 'translate3d(' + tran + '%, 0px, 0px)');
         }
       });
       hammertime.on("hammer.input", function(ev) {
