@@ -167,7 +167,8 @@ export class NgxCarouselComponent
     touch: { active: false, swipe: '', velocity: 0 },
     isEnd: false,
     isFirst: true,
-    isLast: false
+    isLast: false,
+    shouldSlide: true
   };
 
   constructor(private el: ElementRef, private renderer: Renderer) {}
