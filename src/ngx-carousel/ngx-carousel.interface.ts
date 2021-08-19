@@ -22,6 +22,7 @@ export class NgxCarouselStore {
   isEnd: boolean;
   isFirst: boolean;
   isLast: boolean;
+  shouldSlide: boolean;
 }
 export type DeviceType = 'xs' | 'sm' | 'md' | 'lg' | 'all';
 
